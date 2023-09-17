@@ -1,4 +1,5 @@
 /* style */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -70,7 +71,6 @@
     background-color: black;
 }
 
-
 .label:hover > span {
     background-color: white;
     border: 0.15rem solid white;
@@ -84,41 +84,44 @@
     animation: fade 4s ease;
 }
 
-
 input[name="check"]:nth-child(1):checked ~ .slides{
     margin-left: 0;
     transition: margin-left 1s linear;
   }
+
 input[name="check"]:nth-child(2):checked ~ .slides{
     margin-left: -100%;
     transition: margin-left 1s linear;
   }
+
 input[name="check"]:nth-child(3):checked ~ .slides{
     margin-left: -200%;
     transition: margin-left 1s linear;
   }
+
 input[name="check"]:nth-child(4):checked ~ .slides{
     margin-left: -300%;
     transition: margin-left 1s linear;
   }
+
 input[name="check"]:nth-child(5):checked ~ .slides{
     margin-left: -400%;
     transition: margin-left 1s linear;
   }
 
-input[name="check"]:nth-child(1):checked ~ .switch-wrapper .label-wrapper  .label:nth-child(1) span,
-input[name="check"]:nth-child(2):checked ~ .switch-wrapper .label-wrapper  .label:nth-child(2) span,
-input[name="check"]:nth-child(3):checked ~ .switch-wrapper .label-wrapper  .label:nth-child(3) span,
-input[name="check"]:nth-child(4):checked ~ .switch-wrapper .label-wrapper  .label:nth-child(4) span,
-input[name="check"]:nth-child(5):checked ~ .switch-wrapper .label-wrapper  .label:nth-child(5) span {
+input[name="check"]:nth-child(1):checked ~ .switch-wrapper .label-wrapper .label:nth-child(1) span,
+input[name="check"]:nth-child(2):checked ~ .switch-wrapper .label-wrapper .label:nth-child(2) span,
+input[name="check"]:nth-child(3):checked ~ .switch-wrapper .label-wrapper .label:nth-child(3) span,
+input[name="check"]:nth-child(4):checked ~ .switch-wrapper .label-wrapper .label:nth-child(4) span,
+input[name="check"]:nth-child(5):checked ~ .switch-wrapper .label-wrapper .label:nth-child(5) span {
     background-color: #f0e6ae;;
 }
 
-input[name="check"]:nth-child(1):checked ~ .switch-wrapper .label-wrapper  .label:nth-child(1):hover span,
-input[name="check"]:nth-child(2):checked ~ .switch-wrapper .label-wrapper  .label:nth-child(2):hover span,
-input[name="check"]:nth-child(3):checked ~ .switch-wrapper .label-wrapper  .label:nth-child(3):hover span,
-input[name="check"]:nth-child(4):checked ~ .switch-wrapper .label-wrapper  .label:nth-child(4):hover span,
-input[name="check"]:nth-child(5):checked ~ .switch-wrapper .label-wrapper  .label:nth-child(5):hover span {
+input[name="check"]:nth-child(1):checked ~ .switch-wrapper .label-wrapper .label:nth-child(1):hover span,
+input[name="check"]:nth-child(2):checked ~ .switch-wrapper .label-wrapper .label:nth-child(2):hover span,
+input[name="check"]:nth-child(3):checked ~ .switch-wrapper .label-wrapper .label:nth-child(3):hover span,
+input[name="check"]:nth-child(4):checked ~ .switch-wrapper .label-wrapper .label:nth-child(4):hover span,
+input[name="check"]:nth-child(5):checked ~ .switch-wrapper .label-wrapper .label:nth-child(5):hover span {
     border:0.19rem solid red;
 }
 
