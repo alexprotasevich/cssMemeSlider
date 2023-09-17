@@ -7,7 +7,6 @@
 
 .wrapper {
     background-color: rgb(150, 146, 146);
-
 }
 
 .fix-size {
@@ -15,7 +14,6 @@
     height: 100vh;
     margin: 0 auto;
     scroll-behavior: smooth;
-    padding: 1.9rem 1.25rem;
     background-color: #f0e6ae;
 }
 
@@ -29,6 +27,7 @@
     display: flex;
     justify-content: center;
     width: 500%;
+    padding: 1.9rem 0;
 }
 
 .image-wrapper {
@@ -43,6 +42,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 1.25rem;
 }
 
 .label-wrapper {
@@ -142,3 +142,16 @@ input[name="check"]:nth-child(5):checked ~ .switch-wrapper .text-wrapper .text:n
     }
 }
 
+
+/* media */
+
+@media screen and (min-width: 400px) and (max-width: 768px) {
+    .switch-wrapper {
+        flex-direction: column-reverse;
+        align-items: normal;
+        gap: 1.25rem;
+    }
+    .slides {
+        height: 40%;
+    }
+}
