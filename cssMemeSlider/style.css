@@ -5,21 +5,17 @@
     padding: 0;
 }
 
-html{
-    font-size: 10px;
-}
-
 .wrapper {
     background-color: rgb(150, 146, 146);
 
 }
 
 .fix-size {
-    max-width: 1024px;
+    max-width: 64rem;
     height: 100vh;
     margin: 0 auto;
     scroll-behavior: smooth;
-    padding: 30px 20px;
+    padding: 1.9rem 1.25rem;
     background-color: #f0e6ae;
 }
 
@@ -42,7 +38,7 @@ html{
 }
 
 .switch-wrapper {
-    padding-top: 20px;
+    padding-top: 1.25rem;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -61,30 +57,30 @@ html{
 .label {
     display: block;
     cursor: pointer;
-    padding: 7px;
+    padding: 0.5rem;
 }
 
 .label-wrapper span{
     display: block;
-    border: 2px solid black;
+    border: 0.15rem solid black;
     border-radius: 50%;
-    width: 15px;
-    height: 15px;
+    width: 1rem;
+    height: 1rem;
     cursor: pointer;
     background-color: black;
 }
 
-.span:hover {
+
+.label:hover > span {
     background-color: white;
-    border: 2px solid white;
+    border: 0.15rem solid white;
 }
 
 .text {
     display: none;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
-
     animation: fade 3s ease;
 }
 
@@ -118,12 +114,12 @@ input[name="check"]:nth-child(5):checked ~ .switch-wrapper .label-wrapper  .labe
     background-color: #f0e6ae;;
 }
 
-input[name="check"]:nth-child(1):checked ~ .switch-wrapper .label-wrapper  .label:nth-child(1) span:hover,
-input[name="check"]:nth-child(2):checked ~ .switch-wrapper .label-wrapper  .label:nth-child(2) span:hover,
-input[name="check"]:nth-child(3):checked ~ .switch-wrapper .label-wrapper  .label:nth-child(3) span:hover,
-input[name="check"]:nth-child(4):checked ~ .switch-wrapper .label-wrapper  .label:nth-child(4) span:hover,
-input[name="check"]:nth-child(5):checked ~ .switch-wrapper .label-wrapper  .label:nth-child(5) span:hover {
-    border:3px solid red;
+input[name="check"]:nth-child(1):checked ~ .switch-wrapper .label-wrapper  .label:nth-child(1):hover span,
+input[name="check"]:nth-child(2):checked ~ .switch-wrapper .label-wrapper  .label:nth-child(2):hover span,
+input[name="check"]:nth-child(3):checked ~ .switch-wrapper .label-wrapper  .label:nth-child(3):hover span,
+input[name="check"]:nth-child(4):checked ~ .switch-wrapper .label-wrapper  .label:nth-child(4):hover span,
+input[name="check"]:nth-child(5):checked ~ .switch-wrapper .label-wrapper  .label:nth-child(5):hover span {
+    border:0.19rem solid red;
 }
 
 input[name="check"]:nth-child(1):checked ~ .switch-wrapper .text-wrapper .text:nth-child(1),
@@ -131,8 +127,8 @@ input[name="check"]:nth-child(2):checked ~ .switch-wrapper .text-wrapper .text:n
 input[name="check"]:nth-child(3):checked ~ .switch-wrapper .text-wrapper .text:nth-child(3),
 input[name="check"]:nth-child(4):checked ~ .switch-wrapper .text-wrapper .text:nth-child(4),
 input[name="check"]:nth-child(5):checked ~ .switch-wrapper .text-wrapper .text:nth-child(5) {
-  display: block;
-  animation-name: text;
+    display: block;
+    animation-name: text;
 }
 
 @keyframes text {
@@ -144,5 +140,5 @@ input[name="check"]:nth-child(5):checked ~ .switch-wrapper .text-wrapper .text:n
       opacity: 1;
       visibility: visible;
     }
-  }
+}
 
