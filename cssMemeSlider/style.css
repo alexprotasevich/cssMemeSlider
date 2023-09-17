@@ -5,9 +5,9 @@
     padding: 0;
 }
 
-/* html{
-    font-size: 12px;
-} */
+html{
+    font-size: 10px;
+}
 
 .wrapper {
     background-color: rgb(150, 146, 146);
@@ -41,7 +41,7 @@
     width: 100%;
 }
 
-.control-wrapper {
+.switch-wrapper {
     padding-top: 20px;
     width: 100%;
     display: flex;
@@ -61,17 +61,33 @@
 .label {
     display: block;
     cursor: pointer;
-    padding: 10px;
+    padding: 7px;
 }
 
 .label-wrapper span{
     display: block;
-    border: solid black;
+    border: 2px solid black;
     border-radius: 50%;
     width: 15px;
     height: 15px;
     cursor: pointer;
+    background-color: black;
 }
+
+.span:hover {
+    background-color: white;
+    border: 2px solid white;
+}
+
+.text {
+    display: none;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+
+    animation: fade 3s ease;
+}
+
 
 input[name="check"]:nth-child(1):checked ~ .slides{
     margin-left: 0;
@@ -93,3 +109,40 @@ input[name="check"]:nth-child(5):checked ~ .slides{
     margin-left: -400%;
     transition: margin-left 1s linear;
   }
+
+input[name="check"]:nth-child(1):checked ~ .switch-wrapper .label-wrapper  .label:nth-child(1) span,
+input[name="check"]:nth-child(2):checked ~ .switch-wrapper .label-wrapper  .label:nth-child(2) span,
+input[name="check"]:nth-child(3):checked ~ .switch-wrapper .label-wrapper  .label:nth-child(3) span,
+input[name="check"]:nth-child(4):checked ~ .switch-wrapper .label-wrapper  .label:nth-child(4) span,
+input[name="check"]:nth-child(5):checked ~ .switch-wrapper .label-wrapper  .label:nth-child(5) span {
+    background-color: #f0e6ae;;
+}
+
+input[name="check"]:nth-child(1):checked ~ .switch-wrapper .label-wrapper  .label:nth-child(1) span:hover,
+input[name="check"]:nth-child(2):checked ~ .switch-wrapper .label-wrapper  .label:nth-child(2) span:hover,
+input[name="check"]:nth-child(3):checked ~ .switch-wrapper .label-wrapper  .label:nth-child(3) span:hover,
+input[name="check"]:nth-child(4):checked ~ .switch-wrapper .label-wrapper  .label:nth-child(4) span:hover,
+input[name="check"]:nth-child(5):checked ~ .switch-wrapper .label-wrapper  .label:nth-child(5) span:hover {
+    border:3px solid red;
+}
+
+input[name="check"]:nth-child(1):checked ~ .switch-wrapper .text-wrapper .text:nth-child(1),
+input[name="check"]:nth-child(2):checked ~ .switch-wrapper .text-wrapper .text:nth-child(2),
+input[name="check"]:nth-child(3):checked ~ .switch-wrapper .text-wrapper .text:nth-child(3),
+input[name="check"]:nth-child(4):checked ~ .switch-wrapper .text-wrapper .text:nth-child(4),
+input[name="check"]:nth-child(5):checked ~ .switch-wrapper .text-wrapper .text:nth-child(5) {
+  display: block;
+  animation-name: text;
+}
+
+@keyframes text {
+    from {
+      opacity: 0;
+      visibility: hidden;
+    }
+    to {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
