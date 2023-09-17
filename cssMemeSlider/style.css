@@ -84,61 +84,61 @@
     animation: fade 4s ease;
 }
 
-input[name="check"]:nth-child(1):checked ~ .slides{
+#check1:checked ~ .slides{
     margin-left: 0;
     transition: margin-left 1s linear;
   }
 
-input[name="check"]:nth-child(2):checked ~ .slides{
+#check2:checked ~ .slides{
     margin-left: -100%;
     transition: margin-left 1s linear;
   }
 
-input[name="check"]:nth-child(3):checked ~ .slides{
+#check3:checked ~ .slides{
     margin-left: -200%;
     transition: margin-left 1s linear;
   }
 
-input[name="check"]:nth-child(4):checked ~ .slides{
+#check4:checked ~ .slides{
     margin-left: -300%;
     transition: margin-left 1s linear;
   }
 
-input[name="check"]:nth-child(5):checked ~ .slides{
+#check5:checked ~ .slides{
     margin-left: -400%;
     transition: margin-left 1s linear;
   }
 
-input[name="check"]:nth-child(1):checked ~ .switch-wrapper .label-wrapper .label:nth-child(1) span,
-input[name="check"]:nth-child(2):checked ~ .switch-wrapper .label-wrapper .label:nth-child(2) span,
-input[name="check"]:nth-child(3):checked ~ .switch-wrapper .label-wrapper .label:nth-child(3) span,
-input[name="check"]:nth-child(4):checked ~ .switch-wrapper .label-wrapper .label:nth-child(4) span,
-input[name="check"]:nth-child(5):checked ~ .switch-wrapper .label-wrapper .label:nth-child(5) span {
+#check1:checked ~ .switch-wrapper .label-wrapper .label:nth-child(1) span,
+#check2:checked ~ .switch-wrapper .label-wrapper .label:nth-child(2) span,
+#check3:checked ~ .switch-wrapper .label-wrapper .label:nth-child(3) span,
+#check4:checked ~ .switch-wrapper .label-wrapper .label:nth-child(4) span,
+#check5:checked ~ .switch-wrapper .label-wrapper .label:nth-child(5) span {
     background-color: #f0e6ae;
 }
 
-input[name="check"]:nth-child(1):active ~ .switch-wrapper .label-wrapper .label:nth-child(1) span,
-input[name="check"]:nth-child(2):active ~ .switch-wrapper .label-wrapper .label:nth-child(2) span,
-input[name="check"]:nth-child(3):active ~ .switch-wrapper .label-wrapper .label:nth-child(3) span,
-input[name="check"]:nth-child(4):active ~ .switch-wrapper .label-wrapper .label:nth-child(4) span,
-input[name="check"]:nth-child(5):active ~ .switch-wrapper .label-wrapper .label:nth-child(5) span {
+#check1:active ~ .switch-wrapper .label-wrapper .label:nth-child(1) span,
+#check2:active ~ .switch-wrapper .label-wrapper .label:nth-child(2) span,
+#check3:active ~ .switch-wrapper .label-wrapper .label:nth-child(3) span,
+#check4:active ~ .switch-wrapper .label-wrapper .label:nth-child(4) span,
+#check5:active ~ .switch-wrapper .label-wrapper .label:nth-child(5) span {
     background-color: lightslategray;
     border:0.19rem solid lightslategray;
 }
 
-input[name="check"]:nth-child(1):checked ~ .switch-wrapper .label-wrapper .label:nth-child(1):hover span,
-input[name="check"]:nth-child(2):checked ~ .switch-wrapper .label-wrapper .label:nth-child(2):hover span,
-input[name="check"]:nth-child(3):checked ~ .switch-wrapper .label-wrapper .label:nth-child(3):hover span,
-input[name="check"]:nth-child(4):checked ~ .switch-wrapper .label-wrapper .label:nth-child(4):hover span,
-input[name="check"]:nth-child(5):checked ~ .switch-wrapper .label-wrapper .label:nth-child(5):hover span {
+#check1:checked ~ .switch-wrapper .label-wrapper .label:nth-child(1):hover span,
+#check2:checked ~ .switch-wrapper .label-wrapper .label:nth-child(2):hover span,
+#check3:checked ~ .switch-wrapper .label-wrapper .label:nth-child(3):hover span,
+#check4:checked ~ .switch-wrapper .label-wrapper .label:nth-child(4):hover span,
+#check5:checked ~ .switch-wrapper .label-wrapper .label:nth-child(5):hover span {
     border:0.19rem solid red;
 }
 
-input[name="check"]:nth-child(1):checked ~ .switch-wrapper .text-wrapper .text:nth-child(1),
-input[name="check"]:nth-child(2):checked ~ .switch-wrapper .text-wrapper .text:nth-child(2),
-input[name="check"]:nth-child(3):checked ~ .switch-wrapper .text-wrapper .text:nth-child(3),
-input[name="check"]:nth-child(4):checked ~ .switch-wrapper .text-wrapper .text:nth-child(4),
-input[name="check"]:nth-child(5):checked ~ .switch-wrapper .text-wrapper .text:nth-child(5) {
+#check1:checked ~ .switch-wrapper .text-wrapper .text:nth-child(1),
+#check2:checked ~ .switch-wrapper .text-wrapper .text:nth-child(2),
+#check3:checked ~ .switch-wrapper .text-wrapper .text:nth-child(3),
+#check4:checked ~ .switch-wrapper .text-wrapper .text:nth-child(4),
+#check5:checked ~ .switch-wrapper .text-wrapper .text:nth-child(5) {
     display: block;
     animation-name: text;
 }
