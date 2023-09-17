@@ -114,7 +114,16 @@ input[name="check"]:nth-child(2):checked ~ .switch-wrapper .label-wrapper .label
 input[name="check"]:nth-child(3):checked ~ .switch-wrapper .label-wrapper .label:nth-child(3) span,
 input[name="check"]:nth-child(4):checked ~ .switch-wrapper .label-wrapper .label:nth-child(4) span,
 input[name="check"]:nth-child(5):checked ~ .switch-wrapper .label-wrapper .label:nth-child(5) span {
-    background-color: #f0e6ae;;
+    background-color: #f0e6ae;
+}
+
+input[name="check"]:nth-child(1):active ~ .switch-wrapper .label-wrapper .label:nth-child(1) span,
+input[name="check"]:nth-child(2):active ~ .switch-wrapper .label-wrapper .label:nth-child(2) span,
+input[name="check"]:nth-child(3):active ~ .switch-wrapper .label-wrapper .label:nth-child(3) span,
+input[name="check"]:nth-child(4):active ~ .switch-wrapper .label-wrapper .label:nth-child(4) span,
+input[name="check"]:nth-child(5):active ~ .switch-wrapper .label-wrapper .label:nth-child(5) span {
+    background-color: lightslategray;
+    border:0.19rem solid lightslategray;
 }
 
 input[name="check"]:nth-child(1):checked ~ .switch-wrapper .label-wrapper .label:nth-child(1):hover span,
